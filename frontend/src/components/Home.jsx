@@ -17,28 +17,28 @@ const Home = () => {
     })
   }
   return (
-      <motion.div 
-          initial={{ x: "10%", opacity:0 }}
-          animate={{
-            x: "0%", opacity:1
-        }}
+      <div 
+        //   initial={{ x: "10%", opacity:0 }}
+        //   animate={{
+        //     x: "0%", opacity:1
+        // }}
           className='h-full bg-gradient-to-t bg-lime-50 flex justify-center items-center'>
         <div className=' grid justify-center'>
           <p className='font-extralight text-[50px] text-center'> This is a test website! </p>
           <p>Edited now!</p>
           {success && <><Message mess={mess}/></>}
           <div className='my-5 text-center'>
-            <motion.button 
-            initial={{y: "-100%", opacity:0}} 
-            animate={{y: "0", opacity: 1, transition: {duration: 0}}} 
+            <button 
+            // initial={{y: "-100%", opacity:0}} 
+            // animate={{y: "0", opacity: 1, transition: {duration: 0}}} 
             className='bg-blue-400 hover:bg-blue-500 transition-all text-white p-3 w-[150px] text-[20px] rounded-full'
             onClick={getHello}
             > 
               Say hi
-            </motion.button>
+            </button>
           </div>
         </div>
-        </motion.div>
+        </div>
   )
 }
 
