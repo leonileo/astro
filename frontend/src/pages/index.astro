@@ -1,5 +1,5 @@
 ---
-import Home from './Home.jsx'
+import Home from '../components/Home.jsx'
 ---
 
 <html lang="en">
@@ -10,6 +10,8 @@ import Home from './Home.jsx'
 		<title>Simple web app</title>
 	</head>
 	<body>
-		<Home/>
+		<main class="w-full overflow-hidden h-[100vh]">
+			<Home client:load />
+		</main>
 	</body>
 </html>
