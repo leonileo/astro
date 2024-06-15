@@ -8,7 +8,7 @@ const Home = () => {
   const [mess, setMess] = useState("");
 
   const getHello = () => {
-    axios.get('http://localhost:8000/')
+    axios.get('https://astro-backend-yj6z.onrender.com/')
     .then(mess => {
       setSuccess(true)
       setMess(mess.data)
