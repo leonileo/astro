@@ -34,7 +34,7 @@ const Home = () => {
             // initial={{y: "-100%", opacity:0}} 
             // animate={{y: "0", opacity: 1, transition: {duration: 0}}} 
             className='bg-blue-400 hover:bg-blue-500 transition-all text-white p-3 w-[150px] text-[20px] rounded-full'
-            onClick={getHello}
+            // onClick={getHello}
             > 
               Say hi
             </button>
